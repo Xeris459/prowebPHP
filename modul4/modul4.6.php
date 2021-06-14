@@ -1,8 +1,10 @@
 <html>
-    <head> 
-        <title> IF </title> 
-    </head>
-    <body>
+
+<head>
+    <title> Do While </title>
+</head>
+
+<body>
     <?php
         $i = 1;
         do{
@@ -10,5 +12,6 @@
             $i++;
         } while ($i <= 7);
     ?>
-    </body>
+</body>
+
 </html>

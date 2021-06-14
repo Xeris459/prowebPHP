@@ -1,13 +1,17 @@
 <html>
-    <head>
-        <title>Cek bulan</title>
-    </head>
-    <body>
-        <form action="" method="post">
-            Masukan Angka bulan : <input required type="number" name="bulan" max="12" min="1">
-            <button>Cek</button>
-        </form>
-    </body>
+
+<head>
+    <title>Cek bulan</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        Masukan Angka bulan :
+        <input required type="number" name="bulan" max="12" min="1">
+        <button>Cek</button>
+    </form>
+</body>
+
 </html>
 <?php
 if(isset($_POST['bulan'])){
@@ -50,6 +54,9 @@ if(isset($_POST['bulan'])){
             break;
     }
     
-    echo '<br>Angka ' . $_POST['bulan'] . ' yang anda input menunjukan bulan : ' . $bulan;
+    echo '<br>Angka ' 
+        . $_POST['bulan'] 
+        . ' yang anda input menunjukan bulan : ' 
+        . $bulan;
 }
 ?>
