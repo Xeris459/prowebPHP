@@ -28,11 +28,11 @@
         $sutradara  = $baris[3];
         echo "<tr>
                     <td>
-                        <img src=./image/$nama_gmb height=50>
+                        <img src='./image/$nama_gmb' height=50>
                     </td>";
         echo "     <td>
                         <b>
-                            <a href=detail.php?id=$id_film>$judul</a>
+                            <a href='detail.php?id=$id_film'>$judul</a>
                         </b>
                         <br>$sutradara
                     </td>
@@ -44,7 +44,7 @@
     <center>
         <hr>
         Alamat : Jl. Pelan 2 Banyak Anak-Anak<br>
-        e-mail : <a href=mailto:dvdstore@serba-ada.com>dvdstore@ serbaada.com</a>
+        e-mail : <a href="mailto:dvdstore@serba-ada.com">dvdstore@ serbaada.com</a>
     </center>
 </body>
 

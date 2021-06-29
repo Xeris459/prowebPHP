@@ -74,7 +74,7 @@ $action = $_POST['action'];
     <center>
         <hr>
         Alamat : Jl. Pelan 2 Banyak Anak-Anak<br>
-        e-mail : <a href=mailto:dvdstore@serba-ada.com>dvdstore@ serbaada.com</a>
+        e-mail : <a href="mailto:dvdstore@serba-ada.com">dvdstore@ serbaada.com</a>
     </center>
 </body>
 
