@@ -1,12 +1,10 @@
 <?php
-session_start();
-
-$query=new mysqli('localhost', 'root', '', 'akademik');
+include ("koneksi.php");
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$data = mysqli_query($query,"select * from admin where
+$data = mysqli_query($sambungan,"select * from admin where
 username='$username' and password='$password'") or die (mysqli_error($query));
 
 $cek = mysqli_num_rows($data);
@@ -14,7 +12,8 @@ $cek = mysqli_num_rows($data);
 if($cek > 0){
     $_SESSION['username'] = $username;
     $_SESSION['status'] = "login";
-    header("location:session.php");
+    header("location:index.php");
 }else{
-    header("location:index.php?pesan=gagal");   
-} ?>
+    header("location:login.php?pesan=gagal");   
+} 
+?>
