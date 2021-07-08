@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversi Nilai</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>bilangan 1</td>
+        <td><input type="text" id="bil1" /></td>
+      </tr>
+      <tr>
+        <td>Hasil</td>
+        <td><input type="text" id="hasil" /></td>
+      </tr>
+    </table>
+    <button onclick="ubah()">ubah nilai ke huruf</button>
+    <script>
+      function ubah() {
+        const bil1 = parseInt(document.getElementById("bil1").value);
+
+        if (bil1 >= 0 && bil1 <= 40) {
+          document.getElementById("hasil").value = "E";
+        } else if (bil1 > 40 && bil1 <= 55) {
+          document.getElementById("hasil").value = "D";
+        } else if (bil1 > 55 && bil1 <= 70) {
+          document.getElementById("hasil").value = "C";
+        } else if (bil1 > 70 && bil1 <= 80) {
+          document.getElementById("hasil").value = "B";
+        } else if (bil1 > 80 && bil1 <= 100) {
+          document.getElementById("hasil").value = "A";
+        } else {
+          alert("nilai yang di masukan harus 0 - 100");
+        }
+      }
+    </script>
+  </body>
+</html>
